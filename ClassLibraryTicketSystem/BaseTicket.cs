@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryTicketSystem
 {
+    /// <summary>
+    /// Base class for other tickets
+    /// </summary>
     public abstract class BaseTicket
     {
+        /// <summary>
+        /// constant defining brobuzz discount. now - 5%
+        /// </summary>
         protected const int broBuzzDiscount = 5;
         private string _licensePlate;
         
@@ -29,7 +35,13 @@ namespace ClassLibraryTicketSystem
                 catch (ArgumentException) { throw; }
             }
         }
+        /// <summary>
+        /// boolean saying whether brobuzz discount has been used
+        /// </summary>
         public bool Brobuzz { get; set; }
+        /// <summary>
+        /// Date - when the ticket is valid
+        /// </summary>
         public DateTime Date { get; set; }
 
         /// <summary>
