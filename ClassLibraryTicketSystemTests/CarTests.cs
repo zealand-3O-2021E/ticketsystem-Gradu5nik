@@ -24,5 +24,20 @@ namespace ClassLibraryTicketSystem.Tests
             string type = new Car().VeichleType();
             Assert.AreEqual("Car",type);
         }
+        [TestMethod()]
+        [DataRow("I2E4567")]
+        public void LicensePlateTestSuccess(string LP) 
+        {
+            Car testCar = new() { LicensePlate = LP };
+            Assert.AreEqual(LP, testCar.LicensePlate);
+        }
+        [TestMethod()]
+        [ExpectedException(typeof(ArgumentException))]
+        [DataRow("I2E4567B")]
+        public void LicensePlateTestFail(string LP)
+        {
+            Car testCar = new() { LicensePlate = LP };
+            
+        }
     }
 }
