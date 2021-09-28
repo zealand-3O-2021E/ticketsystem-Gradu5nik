@@ -6,26 +6,27 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryTicketSystem
 {
-    public class MC:BaseTicket
+    public class BaseTicket
     {
+        public string LicensePlate { get; set; }
+        public DateTime Date { get; set; }
 
 
-        public override double Price()
+        public virtual double Price()
         /// <summary>
         /// method returns the price of the crossing
         /// </summary>
-        /// <returns>number 125</returns>
+        /// <returns>double</returns>
         {
-            return 125;
+            return 0;
         }
-        public override string VeichleType()
+        public virtual string VeichleType()
         /// <summary>
         /// returns the type of crossing veichle
         /// </summary>
-        /// <returns>string - Motorcylce</returns>
+        /// <returns>string </returns>
         {
-            return "Motorcycle";
+            return "";
         }
     }
 }
-

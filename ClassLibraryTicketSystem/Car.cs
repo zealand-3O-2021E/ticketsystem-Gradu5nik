@@ -2,13 +2,10 @@
 
 namespace ClassLibraryTicketSystem
 {
-    public class Car
+    public class Car :BaseTicket
     {
-        public string LicensePlate { get; set; }
-        public DateTime Date { get; set; }
         
-        
-        public  double Price()
+        public override double Price()
         /// <summary>
         /// method returns the price of the crossing
         /// </summary>
@@ -16,7 +13,7 @@ namespace ClassLibraryTicketSystem
         {
             return 240;
         }
-        public string VeichleType()
+        public override string VeichleType()
         /// <summary>
         /// returns the type of crossing veichle
         /// </summary>
