@@ -10,21 +10,22 @@ namespace ClassLibraryTicketSystem
     {
 
 
-        public override double Price()
         /// <summary>
         /// method returns the price of the crossing
         /// </summary>
         /// <returns>number 125</returns>
+        public override double Price()
+        
         {
             int price = 125;
-            if (Brobuzz) return Discount(price);
+            if (Brobuzz) return Discount(price,broBuzzDiscount);
             return price;
         }
-        public override string VeichleType()
         /// <summary>
         /// returns the type of crossing veichle
         /// </summary>
         /// <returns>string - Motorcylce</returns>
+        public override string VeichleType()
         {
 
             return "Motorcycle";

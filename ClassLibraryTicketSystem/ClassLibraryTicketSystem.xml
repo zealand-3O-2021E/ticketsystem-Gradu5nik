@@ -45,9 +45,42 @@
             <summary>
             private method to calculate discount
             uses constant int which specifies discount in percents ( 5 means 5% discount)
+            has an overload where you can choose another percentage as discount
             </summary>
             <param name="price"> takes original price</param>
             <returns> price with discount</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.BaseTicket.Discount(System.Double,System.Int32)">
+            <summary>
+            overload of the method allows to calculate the price after specific discount
+            </summary>
+            <param name="price"></param>
+            <param name="discount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Car.Price">
+            <summary>
+            method returns the price of the crossing
+            </summary>
+            <returns>number 240</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.Car.VeichleType">
+            <summary>
+            returns the type of crossing veichle
+            </summary>
+            <returns>string - Car</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.MC.Price">
+            <summary>
+            method returns the price of the crossing
+            </summary>
+            <returns>number 125</returns>
+        </member>
+        <member name="M:ClassLibraryTicketSystem.MC.VeichleType">
+            <summary>
+            returns the type of crossing veichle
+            </summary>
+            <returns>string - Motorcylce</returns>
         </member>
     </members>
 </doc>

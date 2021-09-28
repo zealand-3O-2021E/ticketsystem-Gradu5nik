@@ -58,12 +58,25 @@ namespace ClassLibraryTicketSystem
         /// <summary>
         /// private method to calculate discount
         /// uses constant int which specifies discount in percents ( 5 means 5% discount)
+        /// has an overload where you can choose another percentage as discount
         /// </summary>
         /// <param name="price"> takes original price</param>
         /// <returns> price with discount</returns>
         protected double Discount(double price)
         {
-            return price*(1-broBuzzDiscount/100.0);
-        } 
+            return price* (1 - broBuzzDiscount / 100.0);
+        }
+        /// <summary>
+        /// overload of the method allows to calculate the price after specific discount
+        /// </summary>
+        /// <param name="price"></param>
+        /// <param name="discount"></param>
+        /// <returns></returns>
+        protected double Discount(double price,int discount)
+        {
+            return price*(1-discount/100.0);
+        }
+        
     }
 }
+
