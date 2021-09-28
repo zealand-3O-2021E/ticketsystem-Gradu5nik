@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StoreBaeltTicketLibrary", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoreBaeltTicketLibraryTests", "StoreBaeltTicketLibraryTests\StoreBaeltTicketLibraryTests.csproj", "{2143311C-D7A6-4B80-BC3F-61FADA0639CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oresundbron", "Oresundbron\Oresundbron.csproj", "{59ACC0FD-A98F-4B03-B9BC-10B73372EA0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OresundbronTests", "OresundbronTests\OresundbronTests.csproj", "{77B50BA4-7909-484B-B5FB-E90FF54D301C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{2143311C-D7A6-4B80-BC3F-61FADA0639CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2143311C-D7A6-4B80-BC3F-61FADA0639CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2143311C-D7A6-4B80-BC3F-61FADA0639CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59ACC0FD-A98F-4B03-B9BC-10B73372EA0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59ACC0FD-A98F-4B03-B9BC-10B73372EA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59ACC0FD-A98F-4B03-B9BC-10B73372EA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59ACC0FD-A98F-4B03-B9BC-10B73372EA0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77B50BA4-7909-484B-B5FB-E90FF54D301C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77B50BA4-7909-484B-B5FB-E90FF54D301C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77B50BA4-7909-484B-B5FB-E90FF54D301C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77B50BA4-7909-484B-B5FB-E90FF54D301C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
