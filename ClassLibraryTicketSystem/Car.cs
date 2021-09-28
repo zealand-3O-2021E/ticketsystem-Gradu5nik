@@ -11,7 +11,9 @@ namespace ClassLibraryTicketSystem
         /// </summary>
         /// <returns>number 240</returns>
         {
-            return 240;
+            int price = 240;
+            if (Brobuzz) return Discount(price);
+            return price;
         }
         public override string VeichleType()
         /// <summary>

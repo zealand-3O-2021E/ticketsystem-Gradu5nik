@@ -16,7 +16,9 @@ namespace ClassLibraryTicketSystem
         /// </summary>
         /// <returns>number 125</returns>
         {
-            return 125;
+            int price = 125;
+            if (Brobuzz) return Discount(price);
+            return price;
         }
         public override string VeichleType()
         /// <summary>
@@ -24,6 +26,7 @@ namespace ClassLibraryTicketSystem
         /// </summary>
         /// <returns>string - Motorcylce</returns>
         {
+
             return "Motorcycle";
         }
     }

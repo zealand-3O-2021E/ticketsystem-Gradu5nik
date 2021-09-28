@@ -12,10 +12,16 @@ namespace ClassLibraryTicketSystem.Tests
     public class MCTests
     {
         [TestMethod()]
-        public void ChechPriceMethod()
+        public void CheckPriceMethod()
         {
             double pris = new MC().Price();
             Assert.AreEqual(125, pris);
+        }
+        [TestMethod()]
+        public void CheckPriceMethodBrobuzz()
+        {
+            double pris = new MC() { Brobuzz=true}.Price();
+            Assert.AreEqual(118.75, pris,0.1);
         }
 
         [TestMethod()]

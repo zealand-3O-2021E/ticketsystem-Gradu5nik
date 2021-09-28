@@ -12,12 +12,18 @@ namespace ClassLibraryTicketSystem.Tests
     public class CarTests
     {
         [TestMethod()]
-        public void ChechPriceMethod()
+        public void CheckPriceMethod()
         {
             double pris = new Car().Price(); 
             Assert.AreEqual(240,pris);
         }
 
+        [TestMethod()]
+        public void CheckPriceMethodBrobuzz()
+        {
+            double pris = new Car() {Brobuzz=true }.Price();
+            Assert.AreEqual(228, pris, 0.1);
+        }
         [TestMethod()]
         public void CheckVeichleTypeMethod()
         {

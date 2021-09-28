@@ -8,8 +8,9 @@ namespace ClassLibraryTicketSystem
 {
     public abstract class BaseTicket
     {
+        protected const int broBuzzDiscount = 5;
         private string _licensePlate;
-
+        
         /// <summary>
         /// Throws exception if you try to set licenseplate longer than 7 cahracters
         /// </summary>
@@ -28,7 +29,7 @@ namespace ClassLibraryTicketSystem
                 catch (ArgumentException) { throw; }
             }
         }
-
+        public bool Brobuzz { get; set; }
         public DateTime Date { get; set; }
 
         /// <summary>
@@ -41,5 +42,16 @@ namespace ClassLibraryTicketSystem
         /// </summary>
         /// <returns>string </returns>
         public abstract string VeichleType();
+
+        /// <summary>
+        /// private method to calculate discount
+        /// uses constant int which specifies discount in percents ( 5 means 5% discount)
+        /// </summary>
+        /// <param name="price"> takes original price</param>
+        /// <returns> price with discount</returns>
+        protected double Discount(double price)
+        {
+            return price*(1-broBuzzDiscount/100.0);
+        } 
     }
 }
